@@ -16,10 +16,10 @@ const Navbar = () => {
         <div className='flex items-center gap-[50px] '>
             {/** Links to different pages of the store */}
             <ul className='flex items-center gap-[40px] cursor-pointer font-semibold'>
-                <li><a href="../store/store">Store</a></li>
-                <li><a href="/about/about">About</a></li>
-                <li><a href="/services/services">Services</a></li>
-                <li><a href="/contact/contact">Contact</a></li>
+                <li><Link href="../store/store" > Store </Link></li>
+                <li><Link href="/about/about" > About </Link></li>
+                <li><Link href="/services/services" > Services </Link></li>
+                <li><Link href="/contact/contact" > Contact </Link></li>
             </ul>
         </div>
       
