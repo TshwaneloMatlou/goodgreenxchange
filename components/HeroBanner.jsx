@@ -5,9 +5,9 @@ import { urlFor } from '../lib/client';
 
 const HeroBanner = ({ heroBanner }) => {
   return (
-    <div className="flex flex-col bg-green-100 md:flex-row mt-5 md:mt-8">
+    <div className="flex flex-col bg-green-100 text-center p-3 md:flex-row mt-5 md:mt-8 ">
       <img src={urlFor(heroBanner.image)} alt="headphones" className="md:w-1/3 md:mr-4" />
-      <div className="md:w-2/3">
+      <div className="bg-green-800 text-white  pt-5 md:w-2/3">
         {/* Small text */}
         <p className="text-sm md:text-base">{heroBanner.smallText}</p>
         {/* Medium text */}
@@ -15,17 +15,17 @@ const HeroBanner = ({ heroBanner }) => {
         {/* Large text */}
         <h1 className="text-2xl md:text-3xl">{heroBanner.largeText1}</h1>
 
-        {/* Link to product */}
+        {/* Link to product 
         <Link href={`/product/${heroBanner.product}`}>
           <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 md:mt-6">
             {heroBanner.buttonText}
           </button>
-        </Link>
+        </Link> */}
 
         {/* Description */}
-        <div className="mt-4 md:mt-6">
+        <div className="mt-4 pt-6 md:mt-6 ">
           <h5 className="text-lg md:text-xl font-semibold">Description</h5>
-          <p className="text-sm md:text-base">{heroBanner.desc}</p>
+          <p className="font-semibold m-5 md:text-base">{heroBanner.desc}</p>
         </div>
       </div>
     </div>

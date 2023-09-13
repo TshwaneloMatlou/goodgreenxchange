@@ -51,7 +51,7 @@ const About = () => {
                 Our inspiration comes from the simple joys of life.
                 From those early morning bike rides through picture-perfect landscapes to the aroma of freshly harvested produce,
                 we believe in cherishing life's moments.
-                GoodGreenChange is not just a store; it's a celebration of a lifestyle that values well-being and convenience.
+                GoodGreenXchange is not just a store; it's a celebration of a lifestyle that values well-being and convenience.
               </dd>
             </div>
 
