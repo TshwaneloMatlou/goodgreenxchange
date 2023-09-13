@@ -1,40 +1,43 @@
+// Define a schema for a 'product' document
 export default {
-    name: 'product',
-    title: 'Product',
-    type: 'document',
-    fields: [
-      {
-        name: 'image',
-        title: 'Image',
-        type: 'array',
-        of: [{ type: 'image' }],
-        options: {
-          hotspot: true,
-        }
+  name: 'product', // Name of the schema
+  title: 'Product', // Title of the schema
+  type: 'document', // Type of schema (document)
+
+  // Define fields for the 'product' document
+  fields: [
+    {
+      name: 'image', // Field name for product images
+      title: 'Image', // Title of the field
+      type: 'array', // Type of the field (array)
+      of: [{ type: 'image' }], // Array containing images of type 'image'
+      options: {
+        hotspot: true, // Enable hotspot for image adjustments
       },
-      { 
-        name: 'name',
-        title: 'Name',
-        type: 'string',
+    },
+    {
+      name: 'name', // Field name for product name
+      title: 'Name', // Title of the field
+      type: 'string', // Type of the field (string)
+    },
+    {
+      name: 'slug', // Field name for product slug
+      title: 'Slug', // Title of the field
+      type: 'slug', // Type of the field (slug)
+      options: {
+        source: 'name', // Source for generating slug (from 'name' field)
+        maxLength: 90, // Maximum length of the slug
       },
-      { 
-        name: 'slug',
-        title: 'Slug',
-        type: 'slug',
-        options: {
-          source: 'name',
-          maxLength: 90,
-        }
-      },
-      { 
-        name: 'price',
-        title: 'Price',
-        type: 'number',
-      },
-      { 
-        name: 'details',
-        title: 'Details',
-        type: 'string',
-      }
-    ]
-  }
+    },
+    {
+      name: 'price', // Field name for product price
+      title: 'Price', // Title of the field
+      type: 'number', // Type of the field (number)
+    },
+    {
+      name: 'details', // Field name for product details
+      title: 'Details', // Title of the field
+      type: 'string', // Type of the field (string)
+    },
+  ],
+};
