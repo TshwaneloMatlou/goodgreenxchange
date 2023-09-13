@@ -42,7 +42,7 @@ const OurServices = () => {
                 </div>
 
                 <div className='border shadow-lg p-[5px] '>
-                    <video className='mt-[180px]' src="/../pictures/goodgreenxchange_3.mp4" autoplay controls></video>
+                    <video className='mt-[180px]' src="/../pictures/goodgreenxchange_3.mp4" autoPlay controls></video>
                     <h2 className='text-[24px] font-semibold pl-[15px] pt-[15px]'>Video of the GoodGreenXchange store</h2>
                     <p className='text-[15px] text-gray-600 pl-[15px] pb-[10px]'>
                     </p>
