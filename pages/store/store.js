@@ -1,26 +1,25 @@
-import React from 'react'
-
+import React from 'react';
 import { client } from '../../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../../components';
 
 const Store = ({ products, bannerData }) => (
   <div>
+    {/* Hero Banner */}
+    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
-    {/* Section for the the features*/}
-   
-    {/** Best Seller Product */}
+    {/* Section for the features */}
     <div className="products-heading">
-      <h2 className='text-green-700'>...GoodGreenXchange...</h2>
-      <h5>Enjoy Health Living</h5>
+      <h2 className='text-green-700'>GoodGreenXchange</h2>
+      <h5>Enjoy Healthy Living</h5>
     </div>
 
+    {/* Products */}
     <div className="products-container">
       {products?.map((product) => <Product key={product._id} product={product} />)}
     </div>
-    
-    <FooterBanner footerBanner={bannerData && bannerData[0]} /> 
-    
+
+    {/* Footer Banner */}
+    <FooterBanner footerBanner={bannerData && bannerData[0]} />
   </div>
 );
 
@@ -33,7 +32,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: { products, bannerData } 
-  }
-}
+  };
+};
 
 export default Store;

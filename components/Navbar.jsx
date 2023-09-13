@@ -22,7 +22,7 @@ const Navbar = () => {
       <div>
         {/* Logo */}
         <p>
-          <Link href="/">GoodGreenXchange</Link>
+          <Link href="/"><img src='/../pictures/favicon-goodgreenxchange.ico'/></Link>
         </p>
         {/* Mobile menu toggle button */}
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>

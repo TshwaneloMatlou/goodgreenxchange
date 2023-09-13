@@ -3,7 +3,7 @@ import { FaStaylinked } from "react-icons/fa";
 
 const Category = () => {
   return (
-    <div className='bg-green-100 text-black mt-3'>
+    <div className='text-black mt-3'>
       {/* Container for responsive layout */}
       <div className='container mx-auto grid md:grid-cols-2 gap-6 py-6 md:py-12 lg:py-16'>
 
