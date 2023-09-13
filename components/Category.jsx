@@ -1,44 +1,56 @@
-import React from 'react'
-import { Fastaylinked, FaArrowRight, FaStaylinked} from "react-icons/fa"
+import React from 'react';
+import { FaStaylinked } from "react-icons/fa";
 
 const Category = () => {
   return (
-    <div className='bg-black text-white mt-3'>
-      <div className='container mx-auto grid grid-cols-2 gap-[40px] py-[40px]'>
-        <div className='flex gap-[15px] '>
+    <div className='bg-green-100 text-black mt-3'>
+      {/* Container for responsive layout */}
+      <div className='container mx-auto grid md:grid-cols-2 gap-6 py-6 md:py-12 lg:py-16'>
+
+        {/* First Column */}
+        <div className='flex flex-col gap-4 md:gap-6'>
           <FaStaylinked fontSize={40} />
-            <div>
-                <h1 className='text-[24px] pt-[10px] font-semibold'>Our Inspiration</h1>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white p-1'>Driven by a deep Passion for Nutrition and Wellness, I envisioned an e-commerce store that would not only nourish bodies but also souls.</p>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white p-1'>My commitment to Community Well-Being fueled the idea, knowing many lacked access to quality groceries and health products.</p> 
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white p-1'>I aim for more than just sales; I aim for Economic Empowerment too.</p>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white p-1'>By sourcing from local farmers and artisans, I aim to uplift my community economically while fostering a culture of well-being.</p>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white p-1'>In this venture, I found my purpose, turning inspiration into a thriving store that brought health and empowerment to all.</p>
-
-                <div className='flex items-center gap-[7px] cursor-pointermt-[10px] text[14px] font-semibold bg-white'>
-                    <p className='text-gray-700'>Learn More </p> 
-                </div>
+          <div>
+            {/* Heading */}
+            <h1 className='text-xl md:text-2xl font-semibold'>Our Inspiration</h1>
+            {/* Description */}
+            <p className='text-base md:text-lg text-gray-600 bg-white p-2'>
+              Driven by a deep passion for nutrition and wellness, I envisioned an e-commerce store that would not only nourish bodies but also souls. <br />
+              My commitment to Community Well-Being fueled the idea, knowing many lacked access to quality groceries and health products. <br />
+              I aim for more than just sales; I aim for Economic Empowerment too. <br />
+              By sourcing from local farmers and artisans, I aim to uplift my community economically while fostering a culture of well-being. <br />
+              In this venture, I found my purpose, turning inspiration into a thriving store that brought health and empowerment to all.
+            </p>
+            {/* "Learn More" button */}
+            <div className='flex items-center gap-2 cursor-pointer mt-4 text-sm md:text-base font-semibold bg-white p-2'>
+              <p className='text-gray-700'>Learn More</p>
             </div>
+          </div>
         </div>
 
-        <div className='flex gap-[15px] '>
-            <FaStaylinked fontSize={40} />
-            <div>
-                <h1 className='text-[24px] pt-[10px] font-semibold'>Profile of Creators</h1>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white  p-1'>Tshwanelo Matlou</p>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white  p-1'>GitHub Profile: https://github.com/TshwaneloMatlou</p>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white  p-1'>LinkedIn Profile: https://www.linkedin.com/in/tshwanelomatlou</p>
-                <p className='text-[15px] font-semibold leadiong-[23px] text-gray-600 bg-white  p-1'>GitHub Repository: https://github.com/TshwaneloMatlou/GoodGreenXchange</p>
-                
-                <div className='flex items-center gap-[7px] cursor-pointermt-[10px] text[14px] font-semibold bg-white'>
-                    <p className='text-gray-700' >Learn More </p> 
-                </div>
-            </div>
-        </div>
+        {/* Second Column */}
+        <div className='flex flex-col gap-4 md:gap-6'>
+          <FaStaylinked fontSize={40} />
+          <div>
+            {/* Heading */}
+            <h1 className='text-xl md:text-2xl font-semibold'>Profile of Creators</h1>
+            {/* Creator information */}
+            <p className='text-base md:text-lg text-gray-600 bg-white p-2'>Tshwanelo Matlou</p>
+            <p className='text-base md:text-lg text-gray-600 bg-white p-2'>
+              GitHub Profile: <a href="https://github.com/TshwaneloMatlou" className="text-blue-500" target="_blank" rel="noopener noreferrer">https://github.com/TshwaneloMatlou</a> <br />
+              LinkedIn Profile: <a href="https://www.linkedin.com/in/tshwanelomatlou" className="text-blue-500" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/tshwanelomatlou</a> <br />
+              GitHub Profile: <a href="https://github.com/TshwaneloMatlou/GoodGreenXchange" className="text-blue-500" target="_blank" rel="noopener noreferrer">https://github.com/TshwaneloMatlou/GoodGreenXchange</a>
 
+            </p>
+            {/* "Learn More" button */}
+            <div className='flex items-center gap-2 cursor-pointer mt-4 text-sm md:text-base font-semibold bg-white p-2'>
+              <p className='text-gray-700'>Learn More</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;
