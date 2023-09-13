@@ -77,7 +77,7 @@ const about = () => {
               <dd className="mt-2 text-base leading-7 text-gray-600">
                 What sets GoodGreenXchange apart is our dedication to providing you with accurate and up-to-date health information.
                 We believe that informed choices lead to a healthier life.
-                Explore our Health Information Hub, where you'll find articles, tips, and resources to support your wellness journey.
+                Explore our Health Information Hub, where you will find articles, tips, and resources to support your wellness journey.
                </dd>
             </div>
   
