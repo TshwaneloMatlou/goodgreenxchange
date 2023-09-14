@@ -10,8 +10,8 @@ const About = () => {
           <h2 className="text-base font-semibold leading-7 text-black-700">Enjoy Health Living</h2>
           {/* Page Description */}
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Welcome to GoodGreenXchange, where we're more than just an online grocery store.
-            We're a community of health-conscious individuals on a mission to make grocery shopping a holistic and informed experience.
+            Welcome to GoodGreenXchange, where we&apos;re more than just an online grocery store.
+            We&apos;re a community of health-conscious individuals on a mission to make grocery shopping a holistic and informed experience.
           </p>
         </div>
 
@@ -50,8 +50,8 @@ const About = () => {
               <dd className="mt-2 text-base leading-7 text-gray-600">
                 Our inspiration comes from the simple joys of life.
                 From those early morning bike rides through picture-perfect landscapes to the aroma of freshly harvested produce,
-                we believe in cherishing life's moments.
-                GoodGreenXchange is not just a store; it's a celebration of a lifestyle that values well-being and convenience.
+                we believe in cherishing life&apos;s moments.
+                GoodGreenXchange is not just a store; it&apos;s a celebration of a lifestyle that values well-being and convenience.
               </dd>
             </div>
 
