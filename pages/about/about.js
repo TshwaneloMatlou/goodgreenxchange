@@ -6,8 +6,8 @@ const About = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           {/* Page Title */}
-          <p className="mt-2 text-3xl font-bold tracking-tight text-green-900 sm:text-4xl">...GoodGreenXchange...</p>
-          <h2 className="text-base font-semibold leading-7 text-black-700">Enjoy Health Living</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-green-900 sm:text-4xl">GoodGreenXchange</p>
+          <h2 className="text-base font-semibold leading-7 text-black-700">Enjoy Healthy Living</h2>
           {/* Page Description */}
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Welcome to GoodGreenXchange, where we&apos;re more than just an online grocery store.
